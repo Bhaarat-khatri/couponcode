@@ -1,0 +1,159 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header {
+    margin: 0px 15px;
+    padding: 1% 3%;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 50px;
+    /* flex: 1.7; */
+}
+
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0px;
+}
+
+.search{
+    display: flex;
+}
+
+.form-inline{
+    flex-flow: nowrap;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0px;    
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+    width: 100%;
+    padding: 0 0;
+}
+
+.nav-link li {
+    list-style: none;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav-link li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    background: blue;
+    left: 0;
+    bottom: 0;
+    transform: scale(0 , 1);
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease;
+}
+
+.nav-link li:hover::after{
+    transform: scale(1 , 1);
+}
+
+.nav-link a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.top {
+    margin: 30px 0px;
+}
+
+.content {
+    width: 100%;
+    margin: 15px 0px;
+    position: relative;
+}
+
+.writen{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    height: 100px;
+    width:100%;
+    background: transparent;
+    z-index: 1000;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.shadow::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 0.4s;
+}
+
+.shadow:hover .writen{
+    display: block;
+}
+
+.shadow:hover::after{
+    display: block;
+}
+
+
+@media (max-width:991px) {
+      .nav-box{
+          justify-content: center;
+      }  
+
+      .search-box{
+          justify-content: center;
+      }
+
+      .logo-box{
+          justify-content: center;
+      }
+}
+
+@keyframes animate {
+    0%{
+        width: 1px;
+    }
+    100%{
+        width: 20px;
+    }
+}

@@ -2,24 +2,63 @@
 <!-- Css -->
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../public/pageviews.js">
-<title>Study</title>
+<title>Coupon Website</title>
 </head>
+
 <body>
 
-<header>
-    <div class="row">
-        <div class="col-6">
-            <span> Coupon</span>
-        </div>
-        <div class="col-6">
-            <ul>
-                <li>Home</li>
-                <li>Category</li>
-                <li>Wallets</li>
-                <li>About</li>
-            </ul>
-        </div>
-    </div>
-</header>
+    <header class="header">
+        <div class="row top">
+            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 logo-box">
+                <span class="logo">Coupon</span>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 search-box">
+                <nav class="search">
+                    <form method="POST" action="/" class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 nav-box">
+                <ul class="nav-link">
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
 
-<%- include ('partials/footer'); -%>
+        </div>
+    </header>
+
+    <section class="middle">
+        <div class="row bottom">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Amazon</div>
+                <img class="content" src="/images/big-eye.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Flipkart</div>
+                <img class="content" src="/images/adventure.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Dominos</div>
+                <img class="content" src="/images/travel.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Swiggy</div>
+                <img class="content" src="/images/leaf.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Zomato</div>
+                <img class="content" src="/images/brain.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 shadow">
+                <div class="writen">Net-Meds</div>
+                <img class="content" src="/images/pencil.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <%- include ('partials/footer'); -%>
